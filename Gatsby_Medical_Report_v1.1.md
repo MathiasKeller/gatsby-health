@@ -24,9 +24,9 @@
 | **ANIS** | Registered 30.04.2025 |
 | **Weight (last recorded)** | **5.5 kg (13.08.2026)**; 5.14 kg (Sept 2025), 5.2 kg (Apr–Aug 2025). BCS 5/9 = ideal at last scoring |
 | **Housing** | Indoor-only, single pet, no other cats in household |
-| **Owners** | Mathias Keller & Luisa Contreras, Heinrich-Bosshardt-Strasse 3, 8051 Zürich |
-| **Owner phone** | +41 76 750 57 07 (passport) · +41 76 814 42 42 (practice records) |
-| **Tierspital client no.** | 2471839 · **KG no.** 2449680 |
+| **Owners** | Mathias K & Luisa C, Heinrich-Bosshardt-Strasse 3, 8051 Zürich |
+| **Owner phone** | +XX XX XXX XX 07 (passport) · +41 XX XXX XX 42 (practice records) |
+| **Tierspital client no.** | XXXXXX · **KG no.** XXXXXX |
 
 ### Active problems (as of 13.08.2026)
 1. **Bilateral front footpad swelling** — left worse than right; swollen, firm, altered pad surface. **Biopsy scheduled Monday 17.08.2026, 08:00, under general anaesthesia** (Katzen-Praxis Zürich). Cause undetermined.
