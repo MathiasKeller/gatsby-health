@@ -19,8 +19,8 @@
 | **Species / Breed** | Cat, Siberian (SIB), pedigree — colour code **SIB ny 24** |
 | **Sex** | Male, neutered 06.02.2024 |
 | **Date of birth** | 26 July 2022 |
-| **Microchip** | **616093902066791** (implanted 28.10.2022, left side of neck) |
-| **EU Passport no.** | **PL 1218742** (issued Poland, 04.11.2022) |
+| **Microchip** | **XXXXXX6791** (implanted 28.10.2022, left side of neck, complete chip nr on request) |
+| **EU Passport no.** | **PL XXXXX42** (issued Poland, 04.11.2022, complete nr on request) |
 | **ANIS** | Registered 30.04.2025 |
 | **Weight (last recorded)** | **5.5 kg (13.08.2026)**; 5.14 kg (Sept 2025), 5.2 kg (Apr–Aug 2025). BCS 5/9 = ideal at last scoring |
 | **Housing** | Indoor-only, single pet, no other cats in household |
@@ -67,8 +67,8 @@
 | Colour (EMS) | SIB ny 24 — black golden spotted tabby | `[S8]` |
 | Sex | Male, neutered | `[S8]` |
 | Date of birth | 26.07.2022 | `[S8]` |
-| Microchip | 616093902066791, implanted 28.10.2022, left neck | `[S8]` |
-| Passport | PL 1218742, issued 04.11.2022 by Piotr Surma, Bochnia (PL) | `[S8]` |
+| Microchip | XXXXXXXXXXX6791, implanted 28.10.2022, left neck, complete nr on request | `[S8]` |
+| Passport | PL XXXXX42, issued 04.11.2022 by Piotr Surma, Bochnia (PL), complete nr on request | `[S8]` |
 | Distinguishing marks | None recorded in passport | `[S8]` |
 
 ### Origin & migration history
