@@ -1,0 +1,988 @@
+# =============================================================================
+# GATSBY — HEALTH RECORD · SINGLE SOURCE OF TRUTH
+# =============================================================================
+# Everything on the website is generated from this file. Edit here, push,
+# and the site rebuilds automatically. Never edit the HTML in docs/.
+#
+# Evidence tags used throughout:
+#   V = stated in a veterinary document
+#   O = owner observation
+#   I = inference / hypothesis (NOT a diagnosis)
+#   Q = unverified, contradicted, or missing
+#
+# PRIVACY: this file is published publicly. Do not put the home address,
+# phone numbers, email addresses or client numbers in it.
+# =============================================================================
+
+meta:
+  version: "2.0"
+  compiled: 2026-08-13
+  site_title: Gatsby
+  site_subtitle: Health record
+
+patient:
+  call_name: Gatsby
+  passport_name: UJVARI
+  species: Cat
+  breed: Siberian
+  breed_code: SIB ny 24
+  breed_code_meaning: black golden spotted tabby
+  sex: Male, neutered
+  neutered_date: 2024-02-06
+  dob: 2022-07-26
+  microchip: "616093902066791"
+  microchip_date: 2022-10-28
+  microchip_location: Left side of neck
+  passport_no: PL 1218742
+  passport_issued: 2022-11-04
+  anis_registered: 2025-04-30
+  housing: Indoor only · single pet · no other cats in the household
+  owners: Mathias Keller and Luisa Contreras
+  location: Zürich, Switzerland
+  entry_to_switzerland: 2025-04-07
+  current_weight_kg: 5.5
+  current_weight_date: 2026-08-13
+  last_bcs: 5/9 — ideal
+  last_bcs_date: 2025-09-11
+  origin_summary: >
+    Bred in Poland. Raised from kittenhood by breeders Lynn and Thomas in Belgium.
+    Acquired directly from the breeder in 2025 and brought to Switzerland.
+    He was never in a shelter.
+
+# Normal parameters observed for him personally
+baseline:
+  - {label: Temperature, value: 38.0 °C, source: S4}
+  - {label: Heart rate, value: 160–168 / min, source: S4}
+  - {label: Respiratory rate, value: 54 / min, source: S4}
+  - {label: Weight, value: ~5.15–5.5 kg, source: S4}
+  - {label: Body condition, value: 5/9 — ideal, source: S4}
+
+temperament: >
+  Described by Dr. Wendler as attentive and very sweet. Described at the Tierspital
+  emergency department as bright, alert and responsive but anxious. He has removed
+  both a cast and a bandage himself overnight — restrictive dressings are unlikely
+  to stay on.
+
+# =============================================================================
+# PROBLEMS  ·  status: active | recurrent | unresolved | monitoring | treated | open
+# =============================================================================
+problems:
+  - id: P1
+    slug: footpad-swelling
+    title: Footpad swelling, both front paws
+    short: Footpads
+    status: active
+    status_label: Active — biopsy Monday
+    onset: 2026-08
+    band_start: 2026-07-15
+    diagnosis: Undetermined
+    colour: red
+    body: |
+      **Left worse than right.** The pads are swollen and hardened. On examination the
+      right front pads were also judged mildly affected. `[O]`
+
+      ### What the photographs show `[I]`
+
+      The metacarpal (central) pad is markedly enlarged and rounded, the normal pad
+      surface texture is largely lost, and there are areas of pale, pink, depigmented
+      surface where the surrounding pad tissue is dark. The swelling is confined to the
+      pad itself rather than the whole paw. No open wound, discharge or bleeding is
+      visible.
+
+      ### Differentials raised at the consultation `[O]`
+
+      Autoimmune disease · allergy · foreign body · a foot-and-mouth-like condition
+      (raised by Dr. Burkard by analogy with other species; not a recognised feline
+      diagnosis).
+
+      ### Plan
+
+      **Biopsy under general anaesthesia, Monday 17 August 2026, 08:00**, at
+      Katzen-Praxis. FeLV and FIV testing at the same appointment.
+
+      ### Still unrecorded
+
+      - Whether the hind paws are involved
+      - Whether he is lame on the affected limbs at present
+      - Body temperature, lymph node status and systemic signs at the 13.08.2026 visit
+
+  - id: P2
+    slug: oral-lesions
+    title: Recurrent oral and tongue lesions
+    short: Oral lesions
+    status: active
+    status_label: Active — biopsy Monday
+    onset: Unclear
+    band_start: 2026-06-01
+    diagnosis: Undetermined
+    colour: red
+    body: |
+      **Recurring white spots on the tongue.** One to four at a time, 0.5–2 mm across,
+      at the front of the tongue near the tip edge. They come and go. They appear to
+      irritate him — he licks his lips more often than normal. `[O]`
+
+      At the consultation on 13.08.2026, Dr. Wohlgroth described **nodules, possibly
+      ulcers**, on the tongue. `[O]`
+
+      ### What the photographs show `[I]`
+
+      Two sets of oral examination photographs, at roughly 10:36 and 11:02, taken under
+      direct illumination. Several cheek teeth are absent from the lower arcade,
+      consistent with the prior extraction. Detailed lesion characterisation is not
+      possible from these images.
+
+      ### Plan
+
+      Included in the biopsy under general anaesthesia on **17 August 2026**.
+
+  - id: P3
+    slug: forelimb-lameness
+    title: Recurrent forelimb lameness
+    short: Lameness
+    status: recurrent
+    status_label: Recurrent — currently quiescent
+    onset: 2025-04-30
+    band_start: 2025-04-30
+    diagnosis: "2025 episode: septic arthritis MCP IV with osteomyelitis. Cause never established."
+    colour: amber
+    body: |
+      The longest-running and most incompletely explained thread in Gatsby's history.
+      **Four episodes in 24 months**, three of them left-sided, in a strictly indoor,
+      single-cat household with no observed trauma. Only one episode ever produced a
+      diagnosis, and that diagnosis was never traced to a cause.
+
+      ---
+
+      ### Episode 0 · 30 April 2025 — right forelimb
+
+      At his first Swiss consultation, lameness of the **right** forelimb was recorded,
+      with no pain on manipulation and an otherwise normal general condition. Treated
+      with meloxicam. `[S1]`
+
+      > `[Q]` Every subsequent episode is **left**-sided. This is either a genuine
+      > separate right-sided event or a laterality error in the practice record. It has
+      > never been reconciled.
+
+      ---
+
+      ### Episode 1 · July–September 2025 — the major episode
+
+      **Course.** A limp was noticed around 25.07.2025 after roughly two hours
+      unobserved at home `[O]`. Over three weeks it progressed from grade 2/4 to
+      complete non-weight-bearing (5/5), unresponsive to two NSAIDs, and then to a
+      swollen, painful limb up to the elbow with regional lymphadenopathy.
+
+      #### The diagnostic detour
+
+      On 15.08.2025 a **fracture of digit IV was suspected on radiographs read by a
+      veterinary assistant (PTA)** and a cast was applied under anaesthesia `[S9]`.
+
+      On 21.08.2025 Dr. Wendler examined Gatsby and explicitly **did not accept this**.
+      He found the shoulder and elbow non-painful, the **carpus clearly painful on
+      flexion**, and only questionable pain at digit IV — noting that the toe finding
+      *"does not on its own explain the massive lameness."* He recorded the radiographic
+      appearance as a *questionable porous bone structure* of digit IV, left the
+      diagnosis **open**, and referred to the Tierspital for CT. `[S9]`
+
+      > **The fracture was never confirmed and forms no part of the final diagnosis.**
+
+      #### Tierspital findings, 25–27 August 2025 `[S2]`
+
+      **Clinical.** Vital parameters normal. Lameness 5/5. Swelling of the paw extending
+      to the proximal antebrachium. Pain on lateral palpation of the entire limb.
+      Enlarged left prescapular lymph node. **A small wound with redness in the web
+      between digits 3 and 4.**
+
+      **CT with iodinated contrast.**
+
+      - Poorly defined, permeative lysis at the **distal Os metacarpale IV**, more pronounced abaxially
+      - Involvement of the **palmar sesamoid bones**, more markedly the abaxial one, with moderate bone loss
+      - Less pronounced change at the proximal part of the **proximal phalanx of digit IV**
+      - Severe circumferential soft-tissue swelling centred on the **metacarpophalangeal joint IV**, with severe circumferential contrast enhancement — extending proximally to mid-diaphysis of MC IV, distally to the distal phalanx, both palmar-accentuated, and axially and abaxially into the interdigital spaces, following the course of the **deep digital flexor tendon** of that digit
+      - After contrast, a relatively hypoattenuating zone around the tendon (tendon sheath)
+      - **Severely enlarged left superficial cervical lymph node** (~1.8 cm), heterogeneous enhancement
+      - Mildly enlarged left accessory axillary lymph node
+
+      **CT diagnosis.** Severe arthritis of the metacarpophalangeal joint IV with
+      **polyostotic osteomyelitis**, severe **tendovaginitis of the deep digital flexor
+      tendon** (digit IV), and severe accompanying soft-tissue swelling. Severe left
+      superficial cervical lymphadenomegaly.
+
+      **CT conclusion.** Findings suspicious for **septic arthritis and tenovaginitis
+      with phlegmon and reactive regional lymphadenomegaly** — for example following a
+      bite or stepping on a sharp object. Foreign material such as small plant fragments
+      **not visible, though its presence cannot be excluded.** Neoplastic causes
+      (fibrosarcoma, squamous cell carcinoma) considered unlikely.
+
+      **Ultrasound.** Severe circumferential dilatation of the tendon sheath around the
+      terminal tendon of extensor digitorum IV, fibre pattern intact. Punctate
+      hyperechoic foci within one of the flexors palmarolaterally at the level of the
+      accessory carpal bone (most likely flexor carpi ulnaris). Small zones of
+      corpuscular content along the palmar contour of the metacarpals. The MCP joint of
+      digit IV distended dorsally at the level of the punctate wound in the 3rd/4th
+      interdigital space, with mildly irregular joint margins.
+
+      **Ultrasound conclusion.** Strong suspicion of a probably **septic tenovaginitis
+      of the flexor tendon sheath of MC IV** and **phlegmon** along the distal left
+      forelimb, palmar-accentuated. The hyperechoic foci remained unexplained —
+      differentials small gas accumulations or fibrosis, **with no clear indication of
+      foreign material**. Fluid accumulations were too small to aspirate safely.
+
+      **Lymph node aspirate.** Mild reactive hyperplasia — a non-specific finding
+      secondary to antigenic stimulation.
+
+      #### Final diagnosis `[S2]`
+
+      Phlegmon of the left forelimb with signs of osteomyelitis of the left distal
+      extremity (left paw, digit IV). Cause unknown; a small foreign body suspected but
+      never demonstrated.
+
+      #### Treatment and response `[S2]`
+
+      Inpatient IV antibiotics and analgesia. **Marked improvement in gait within one
+      day**, swelling almost fully resolved. **No surgical indication.** Discharged on
+      Clavaseptin, Gabapentin and Buprenorphine with 1–2 weeks of rest.
+
+      #### Outcome `[O]`
+
+      The leg appeared normal afterwards. A recheck appointment was attended and the
+      Tierspital reported that everything was fine, but **no written report was
+      received** and **no follow-up bloodwork was performed**.
+
+      ---
+
+      ### Episode 2 · 2 April 2026
+
+      Emergency consultation at ALOHA Kleintierpraxis for left forelimb lameness.
+      Treated with meloxicam by subcutaneous injection plus oral suspension, and a
+      homeopathic preparation. **No cause identified.** Resolved after about three days.
+      `[S10]` `[O]`
+
+      > Only a receipt exists for this visit. No clinical findings were recorded in any
+      > document held.
+
+  - id: P4
+    slug: pruritus
+    title: Pruritus with ear pustules and crusting
+    short: Skin
+    status: unresolved
+    status_label: Unresolved — workup never done
+    onset: 2025-09-11
+    band_start: 2025-09-11
+    diagnosis: Undetermined
+    colour: amber
+    body: |
+      ### Presentation, 11 September 2025 `[S4]`
+
+      Presented on emergency for acute itching and skin reddening. General condition
+      good, vitals within normal limits (T 38.0 °C, HR 160/min, RR 54/min mildly
+      elevated), weight 5.14 kg, BCS 5/9. Behaviour: bright, alert and responsive
+      **but anxious**.
+
+      **Findings.** Both ears reddened, especially on the inner surface, with
+      **pustules on the ear margins and crusting on the outer surface at the ear
+      margin (right worse than left)**, itchy when rubbed. **Abdomen reddened with
+      small crusts.** No alopecia. **Paws unremarkable.** Oral examination normal.
+      Heart and lung auscultation normal.
+
+      **Diagnosis.** Pruritus, cause undetermined at the time.
+
+      **Treatment.** Advocate spot-on (antiparasitic); Leniskin foam; Apoquel 5.4 mg
+      half a tablet twice daily, with the explicit instruction that it must be tapered
+      rather than stopped abruptly; continue the antibiotics from the surgical
+      department.
+
+      **Recommendation.** A full dermatological workup was not possible in the emergency
+      setting. An appointment with the Dermatology department, or another dermatology
+      specialist, was requested for the following Monday.
+
+      ### What happened next `[O]`
+
+      Apoquel was given for approximately one week. **The dermatology workup was never
+      carried out.** Whether the tapering instruction was followed is not recorded, and
+      the outcome of the skin signs was never documented.
+
+      > **This is the largest unclosed loop in the record.** A specialist workup was
+      > formally requested by the treating clinic and never happened, and the condition
+      > was never given a diagnosis.
+
+  - id: P5
+    slug: dental
+    title: Dental disease
+    short: Dental
+    status: treated
+    status_label: Treated
+    onset: 2026-03
+    band_start: 2026-02-15
+    band_end: 2026-03-16
+    diagnosis: Not documented
+    colour: green
+    body: |
+      **Presentation `[O]`.** Halitosis, and a visibly decayed tooth found on inspection.
+
+      **Procedure, 16 March 2026 `[O]`.** Dental cleaning under general anaesthesia with
+      **extraction of one tooth** — owner recollection is the **upper right**, not
+      confirmed by any document. A full-mouth intraoral radiographic series was taken.
+      Patient number 134141.
+
+      **Outcome `[O]`.** Halitosis resolved and has not recurred.
+
+      > `[Q]` **No report, dental chart, invoice, anaesthetic record or post-operative
+      > medication list exists in the file.** The provider is not named on the images.
+      > Since Dr. Wendler administered a vaccination on 09.03.2026, one week earlier, his
+      > practice is the most likely provider `[I]` — worth confirming, and worth
+      > obtaining the actual record.
+
+  - id: P6
+    slug: cardiac
+    title: Sinus arrhythmia
+    short: Cardiac
+    status: monitoring
+    status_label: Normal heart — monitoring
+    onset: 2025-10
+    band_start: 2025-09-20
+    band_end: 2025-10-02
+    diagnosis: Structurally and functionally normal heart
+    colour: green
+    body: |
+      ### Reason for referral, 2 October 2025 `[S5]`
+
+      Internal investigation of a newly detected cardiac rhythm abnormality.
+
+      **Clinical.** General condition good, bright. After prolonged play, mild exercise
+      intolerance with tachypnoea, normalising quickly. No open-mouth breathing.
+      **No heart murmur.** HR 168/min, slightly arrhythmic.
+
+      **ECG** (Dr. Ivona Badric, Cardiology). PR interval constant; QRS complexes narrow
+      (30 ms), normal morphology; R-R interval not constant; HR 136/min.
+      → **Sinus arrhythmia.**
+
+      **Echocardiography.** Normal chamber volumes, small left auricle, normal wall
+      thickness, a false tendon attaching to the interventricular septum, no systolic
+      anterior motion of the mitral valve, pulmonary veins not congested, no turbulence
+      on colour Doppler.
+
+      | Parameter | Value |
+      |---|---|
+      | LA max | 1.55 cm |
+      | LA/Ao | 1.4 |
+      | IVSd | 0.37 cm long axis / 0.38 cm short axis |
+      | LVPWd | 0.40 cm long axis / 0.36 cm short axis |
+      | LVDd / LVDs | 1.5 cm / 0.8 cm |
+      | **Fractional shortening** | **47 %** |
+      | MV E/A | 1.2 |
+      | Vmax pulmonary artery | 0.8 m/s |
+      | Vmax aorta | 1.0 m/s |
+
+      **Diagnosis.** Structurally and functionally normal heart; sinus arrhythmia.
+
+      **Treatment.** None required.
+
+      **Recommendation.** Because Siberians are predisposed to HCM, a screening
+      echocardiogram in **2–3 years** — due late 2027 to late 2028 — or sooner at any
+      point if a murmur, arrhythmia or gallop rhythm is heard.
+
+  - id: P7
+    slug: renal
+    title: Mildly elevated creatinine
+    short: Renal
+    status: open
+    status_label: Never rechecked
+    onset: 2025-08-27
+    band_start: 2025-08-27
+    diagnosis: Single abnormal value, unrepeated
+    colour: grey
+    body: |
+      Serum creatinine on 27 August 2025 was **171 µmol/l** against a reference interval
+      of 98–163 µmol/l — mildly elevated. The Tierspital explicitly recommended
+      **repeat bloodwork in 2–4 weeks** `[S2]`.
+
+      **This recheck was never performed** `[O]`. Nearly a year has passed.
+
+      > **Context matters.** This sample was taken during an active systemic infection,
+      > on NSAIDs, in a hospitalised cat — all of which can transiently affect renal
+      > parameters. A single value in that setting is not evidence of kidney disease.
+      > It is simply unresolved.
+
+      Given the general anaesthesia scheduled for 17 August 2026, renal values are worth
+      including in a pre-anaesthetic panel.
+
+# =============================================================================
+# TIMELINE
+# =============================================================================
+timeline:
+  - date: 2022-07-26
+    title: Born in Poland
+    detail: Bred by a Polish breeder. First registered owner in the passport is a private individual in Bochnia.
+    provider: Poland
+    tag: V
+    source: S8
+    milestone: true
+  - date: 2022-10-28
+    title: Microchipped and first rabies vaccination
+    detail: "Chip 616093902066791 implanted in the left side of the neck. Rabisin (Boehringer Ingelheim), lot L496243, valid to 28.10.2023."
+    provider: P. Surma, Bochnia (PL)
+    tag: V
+    source: S8
+  - date: 2022-11-04
+    title: EU pet passport issued
+    detail: Passport PL 1218742.
+    provider: P. Surma, Bochnia (PL)
+    tag: V
+    source: S8
+  - date: 2022-11-15
+    title: Clinical examination — fit for transport
+    provider: P. Surma, Bochnia (PL)
+    tag: V
+    source: S8
+  - date: 2022-11-18
+    title: Anti-echinococcus treatment
+    detail: Galces Plus (Pharmagal), 14:00.
+    provider: P. Surma, Bochnia (PL)
+    tag: V
+    source: S8
+  - date: 2023-02-10
+    title: Vaccinated in Belgium — weight 3.5 kg
+    detail: Nobivac Tricat Trio, lot A423D01. By this point he was living with the breeders Lynn and Thomas.
+    provider: N. Limon, Sint-Genesius-Rode (BE)
+    tag: V
+    source: S8
+  - date: 2024-02-06
+    title: Neutered
+    detail: Recorded in the passport under "Others". No clinical record held.
+    provider: S. Gusarov, Bous (LU)
+    tag: V
+    source: S8
+    milestone: true
+  - date: 2025-03-12
+    title: Rabies booster and fitness-for-transport examination
+    detail: Rabigen mono (Virbac). Valid 03.04.2025 to 03.04.2026.
+    provider: S. Gusarov, Bous (LU)
+    tag: V
+    source: S8
+  - date: 2025-04-06
+    title: Anti-echinococcus treatment and fitness-for-transport examination
+    detail: Caniquantel Plus.
+    provider: S. Gusarov, Bous (LU)
+    tag: V
+    source: S8
+  - date: 2025-04-07
+    title: Acquired from the breeder and brought to Switzerland
+    detail: Customs stamp EZV/Zoll Basel West.
+    provider: Basel West customs
+    tag: V
+    source: S8
+    milestone: true
+  - date: 2025-04-30
+    title: First Swiss consultation — lameness front RIGHT
+    detail: "ANIS registration. Feligen CRP vaccination. No pain on manipulation, general condition otherwise normal. Inflacam prescribed. Weight 5.2 kg. The anamnesis records him as a shelter adoption, which is incorrect."
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: V
+    source: S1
+  - date: 2025-07-25
+    title: Limp on the left forelimb noticed
+    detail: Observed after roughly two hours unobserved at home.
+    provider: At home
+    problem: P3
+    tag: O
+    source: S6
+    milestone: true
+  - date: 2025-07-28
+    title: Lameness 2/4 left forelimb
+    detail: "Elbow extension painful, elbow slightly swollen and warm, no crepitus. No wound or blood found. Indoor only, no other cat. Inflacam oral suspension. Weight 5.2 kg."
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: V
+    source: S1
+  - date: 2025-08-05
+    title: Non-weight-bearing — radiographs show no cause
+    detail: "Lameness 4/4. Pain over elbow and triceps. Radiographs of elbow, carpus and shoulder: no identifiable cause for the lameness. Onsior 6 mg once daily for six days."
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: V
+    source: S1
+    images: [I1, I2, I3]
+  - date: 2025-08-07
+    title: Telephone follow-up
+    detail: Improved on Onsior but the effect does not last a full 24 hours. Continue, recheck if no clear improvement.
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: V
+    source: S1
+  - date: 2025-08-14
+    title: Confinement pen built at home
+    detail: A 2 × 2 m pen, on the owners' own initiative, to stop him jumping onto furniture.
+    provider: At home
+    problem: P3
+    tag: O
+    source: S6
+  - date: 2025-08-15
+    title: Fracture of digit IV suspected — later rejected
+    detail: "Paw radiographs. A fracture of digit IV was suspected on films read by a veterinary assistant (PTA). A cast was applied under general anaesthesia. He freed himself from it overnight."
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: Q
+    source: S9
+    images: [I4, I5]
+    milestone: true
+  - date: 2025-08-16
+    title: Cast reapplied
+    detail: No anaesthesia needed on this occasion.
+    provider: Andreaspark-Tierärzte
+    problem: P3
+    tag: O
+    source: S6
+  - date: 2025-08-21
+    title: Dr. Wendler rejects the fracture and refers for CT
+    detail: >
+      Shoulder and elbow non-painful. Carpus clearly painful on flexion, extension
+      uncomfortable. Only questionable pain at digit IV — "does not on its own explain
+      the massive lameness". X-ray read as questionable porous bone structure of digit
+      IV. Diagnosis left open; differentials bone, ligament, neurological. Cast replaced
+      with a soft bandage, which gave better weight-bearing. Inflacam stopped. Referred
+      to the Tierspital for CT.
+    provider: Kleintierpraxis Dr. Wendler
+    problem: P3
+    tag: V
+    source: S9
+    milestone: true
+  - date: 2025-08-25
+    title: Admitted to Tierspital Zürich
+    detail: >
+      Lameness 5/5. Swelling from the paw to the proximal antebrachium, painful on
+      lateral palpation of the whole limb. A small wound and redness between digits 3
+      and 4. Enlarged left prescapular lymph node. CT with contrast, soft-tissue
+      ultrasound and lymph node aspiration performed. IV antibiotics and analgesia.
+    provider: Tierspital Zürich — Surgery
+    problem: P3
+    tag: V
+    source: S2
+    milestone: true
+  - date: 2025-08-27
+    title: Discharged — septic arthritis with osteomyelitis
+    detail: >
+      Marked gait improvement within 24 hours, swelling almost fully resolved. No
+      surgical indication. Discharged on Clavaseptin for four weeks, Gabapentin for two
+      weeks and Buprenorphine for one to two days, with one to two weeks of rest.
+      Repeat bloodwork recommended in 2–4 weeks because of the creatinine.
+    provider: Tierspital Zürich — Surgery
+    problem: P3
+    tag: V
+    source: S2
+  - date: 2025-08-27
+    title: Creatinine mildly elevated — recheck recommended
+    detail: >
+      Serum creatinine 171 µmol/l against a reference interval of 98–163. Repeat
+      bloodwork recommended in 2–4 weeks. The recheck was never performed.
+    provider: Tierspital Zürich — Surgery
+    problem: P7
+    tag: V
+    source: S2
+  - date: 2025-09-11
+    title: Emergency consult — acute itching, ear pustules
+    detail: >
+      Both ears reddened, pustules on the ear margins, crusting on the outer ear margin
+      (right worse than left), itchy when rubbed. Abdomen reddened with small crusts.
+      No alopecia; paws unremarkable. Weight 5.14 kg, BCS 5/9. Diagnosed as pruritus of
+      undetermined cause. Advocate spot-on, Leniskin foam and Apoquel. A dermatology
+      workup was requested — it never took place.
+    provider: Tierspital Zürich — Emergency
+    problem: P4
+    tag: V
+    source: S4
+    milestone: true
+  - date: 2025-10-02
+    title: Cardiac workup — heart normal
+    detail: >
+      ECG shows sinus arrhythmia. Echocardiography shows a structurally and functionally
+      normal heart, fractional shortening 47 %, normal wall thickness, no turbulence.
+      No therapy required. Screening echo suggested in 2–3 years given the Siberian HCM
+      predisposition.
+    provider: Tierspital Zürich — Cardiology
+    problem: P6
+    tag: V
+    source: S5
+  - date: 2026-03-09
+    title: Vaccination booster
+    detail: Feligen CRP, lot 9TZH, valid to 09.03.2027.
+    provider: Kleintierpraxis Dr. Wendler
+    tag: V
+    source: S8
+  - date: 2026-03-16
+    title: Dental cleaning and one extraction
+    detail: >
+      Prompted by halitosis and a visibly decayed tooth. One tooth extracted — owner
+      recollection is the upper right, unconfirmed. Full-mouth intraoral radiographs
+      taken. Bad breath resolved afterwards and has not returned. No written record held.
+    provider: Provider unconfirmed — probably Dr. Wendler
+    problem: P5
+    tag: O
+    source: null
+    images: [I6, I7, I8, I9, I10, I11, I12]
+    milestone: true
+  - date: 2026-04-02
+    title: Third lameness episode — no cause found
+    detail: >
+      Emergency consultation for left forelimb lameness. Meloxicam 0.5 mg by
+      subcutaneous injection plus oral suspension, and a homeopathic preparation.
+      No cause identified. Resolved after about three days. Only a receipt exists —
+      no clinical findings were recorded.
+    provider: ALOHA Kleintierpraxis
+    problem: P3
+    tag: V
+    source: S10
+  - date: 2026-04-03
+    title: Rabies vaccination expires
+    detail: Cover has been lapsed since this date.
+    tag: V
+    source: S8
+    alert: true
+  - date: 2026-08-13
+    title: Footpad swelling and tongue lesions — biopsy planned
+    detail: >
+      Weight 5.5 kg. Presented for swollen, hardened front footpads, left worse than
+      right, and for recurrent 0.5–2 mm white spots near the tongue tip with increased
+      lip-licking. Nodules or ulcers observed on the tongue. No conclusive diagnosis.
+      Differentials discussed: autoimmune disease, allergy, foreign body, a
+      foot-and-mouth-like condition. Biopsy under general anaesthesia arranged.
+    provider: Katzen-Praxis Zürich — V. Burkard, L. Wohlgroth
+    problem: [P1, P2]
+    tag: O
+    source: null
+    images: [I13, I14, I15, I16, I17, I18, I19, I20, I21, I22]
+    milestone: true
+  - date: 2026-08-17
+    title: Scheduled — biopsy under general anaesthesia, plus FeLV/FIV testing
+    detail: 08:00 at Katzen-Praxis. Footpad and tongue biopsies.
+    provider: Katzen-Praxis Zürich
+    problem: [P1, P2]
+    tag: O
+    scheduled: true
+
+# =============================================================================
+# OBSERVATIONS — your own log between vet visits.
+# Newest first. Added automatically by the "Record an observation" issue form.
+# =============================================================================
+observations: []
+
+# =============================================================================
+# MEDICATIONS
+# =============================================================================
+medications_current: []
+
+medications_past:
+  - {start: 2025-04-30, end: null, drug: Inflacam 0.5 mg/ml oral suspension, generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Right forelimb lameness, prescriber: Andreaspark, response: Not documented, source: S1}
+  - {start: 2025-07-28, end: 2025-08-05, drug: Inflacam 0.5 mg/ml oral suspension, generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Left forelimb lameness, prescriber: Andreaspark, response: Insufficient — lameness progressed, source: S1}
+  - {start: 2025-08-05, end: 2025-08-11, drug: Onsior 6 mg, generic: robenacoxib, dose: 6 mg, route: PO once daily for 6 days, indication: Left forelimb lameness, prescriber: Andreaspark, response: Partial; relief did not last 24 hours, source: S1}
+  - {start: 2025-08-11, end: 2025-08-21, drug: Inflacam (resumed), generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Left forelimb lameness, prescriber: Andreaspark, response: Insufficient. Stopped by Dr. Wendler, source: S9}
+  - {start: 2025-08-27, end: 2025-09-24, drug: Clavaseptin 250 mg, generic: amoxicillin-clavulanate, dose: half a tablet, route: PO three times daily for 4 weeks, indication: Septic arthritis and osteomyelitis, prescriber: Tierspital, response: Marked improvement within 24 hours, source: S2, key: true}
+  - {start: 2025-08-27, end: 2025-09-10, drug: Gabapentin 50 mg, generic: gabapentin, dose: 1 tablet, route: PO three times daily for 2 weeks, indication: Analgesia, prescriber: Tierspital, response: Not documented, source: S2}
+  - {start: 2025-08-27, end: 2025-08-29, drug: Buprenorphine solution, generic: buprenorphine, dose: 0.3 ml, route: 2–3 times daily for 1–2 days, indication: Analgesia, prescriber: Tierspital, response: Not documented, source: S2}
+  - {start: 2025-09-11, end: null, drug: Advocate spot-on, generic: imidacloprid / moxidectin, dose: 1 pipette, route: Topical to the neck, indication: Antiparasitic, prescriber: Tierspital, response: Not documented, source: S4}
+  - {start: 2025-09-11, end: null, drug: Leniskin foam, generic: topical skin support, dose: as directed, route: Topical to affected areas, indication: Skin support, prescriber: Tierspital, response: Not documented, source: S4}
+  - {start: 2025-09-11, end: 2025-09-18, drug: Apoquel 5.4 mg, generic: oclacitinib, dose: half a tablet, route: PO twice daily, indication: Pruritus, prescriber: Tierspital, response: "Given about one week. Response not documented. Taper instruction — compliance unrecorded.", source: S4}
+  - {start: 2026-04-02, end: 2026-04-02, drug: Metacam 5 mg/ml injection, generic: meloxicam, dose: 0.1 ml = 0.5 mg, route: Subcutaneous, once, indication: Left forelimb lameness, prescriber: ALOHA, response: Resolved in about 3 days, source: S10}
+  - {start: 2026-04-02, end: 2026-04-05, drug: Metacam cat oral suspension, generic: meloxicam, dose: 3 ml dispensed, route: PO, indication: Left forelimb lameness, prescriber: ALOHA, response: Resolved, source: S10}
+  - {start: 2026-04-02, end: null, drug: Homeopathic preparation, C potency, generic: not specified, dose: not specified, route: not specified, indication: Not specified, prescriber: ALOHA, response: Not documented, source: S10}
+
+medication_notes:
+  - "**Dose correction.** An earlier owner-maintained note recorded *Inflacam 5 mg per day*. The dispensed product was Inflacam 0.5 mg/ml oral suspension dosed for a 5 kg cat — on the order of **0.25 mg meloxicam per day**, roughly twenty times less. Do not carry the earlier figure forward."
+
+# =============================================================================
+# LABORATORY
+# =============================================================================
+labs:
+  - date: 2025-08-27
+    panel: Serum biochemistry
+    provider: Tierspital Zürich
+    source: S2
+    note: >
+      Drawn during hospitalisation for an active deep infection, on NSAIDs and
+      antibiotics. Serum amyloid A — an acute-phase protein — was within normal limits
+      despite the extent of the infection.
+    results:
+      - {name: Urea, value: 10.3, unit: mmol/l, low: 7.4, high: 12.6}
+      - {name: Creatinine, value: 171, unit: µmol/l, low: 98, high: 163}
+      - {name: Total protein (Biuret), value: 72, unit: g/l, low: 64, high: 80}
+      - {name: Albumin, value: 35, unit: g/l, low: 32, high: 42}
+      - {name: Globulin (calculated), value: 37, unit: g/l, low: null, high: null}
+      - {name: Cholesterol, value: 7.4, unit: mmol/l, low: 2.6, high: 6.8}
+      - {name: Triglycerides, value: 0.2, unit: mmol/l, low: 0.3, high: 1.3}
+      - {name: Alkaline phosphatase, value: 49, unit: U/l, low: 16, high: 43}
+      - {name: Lipase, value: 11, unit: U/l, low: 6, high: 21}
+      - {name: AST (GOT), value: 16, unit: U/l, low: 19, high: 44}
+      - {name: ALT (GPT), value: 30, unit: U/l, low: 34, high: 98}
+      - {name: Creatine kinase, value: 174, unit: U/l, low: 77, high: 355}
+      - {name: Sodium, value: 146, unit: mmol/l, low: 150, high: 157}
+      - {name: Potassium, value: 4.3, unit: mmol/l, low: 3.8, high: 5.4}
+      - {name: Chloride, value: 113, unit: mmol/l, low: 113, high: 123}
+      - {name: Calcium, value: 2.55, unit: mmol/l, low: 2.4, high: 2.8}
+      - {name: Phosphate, value: 1.85, unit: mmol/l, low: 0.9, high: 1.8}
+      - {name: Serum amyloid A, value: 1.5, unit: mg/l, low: null, high: 3.9}
+
+labs_scheduled:
+  - {date: 2026-08-17, tests: "FeLV · FIV · footpad histopathology · tongue histopathology", provider: Katzen-Praxis}
+
+labs_never_done:
+  - Complete blood count (haematology) — never performed in four years
+  - Urinalysis — never performed
+  - Repeat biochemistry since August 2025 — one was formally recommended
+
+# =============================================================================
+# WEIGHT
+# =============================================================================
+weights:
+  - {date: 2023-02-10, kg: 3.5, source: S8}
+  - {date: 2025-04-30, kg: 5.2, source: S1}
+  - {date: 2025-07-28, kg: 5.2, source: S1}
+  - {date: 2025-08-05, kg: 5.2, source: S1}
+  - {date: 2025-09-11, kg: 5.14, bcs: 5/9, source: S4}
+  - {date: 2026-08-13, kg: 5.5, source: null}
+
+weight_note: >
+  Stable within 0.1 kg from April to September 2025, then a rise of about 0.36 kg
+  (roughly 7 %) over the following eleven months. A modest, gradual gain in a neutered
+  adult indoor cat — worth watching as a trend rather than treating as a concern. Body
+  condition has not been scored since September 2025.
+
+# =============================================================================
+# PREVENTIVE CARE
+# =============================================================================
+vaccinations:
+  - {date: 2022-10-28, vaccine: Rabisin, type: Rabies, batch: L496243, valid_until: 2023-10-28, by: P. Surma (PL), source: S8}
+  - {date: 2023-02-10, vaccine: Nobivac Tricat Trio, type: Panleukopenia / rhinotracheitis / calicivirus, batch: A423D01, valid_until: null, by: N. Limon (BE), source: S8}
+  - {date: 2025-03-12, vaccine: Rabigen mono, type: Rabies, batch: "9GJ5", valid_until: 2026-04-03, by: S. Gusarov (LU), source: S8}
+  - {date: 2025-04-30, vaccine: Feligen CRP, type: Panleukopenia / rhinotracheitis, batch: "9K52", valid_until: null, by: Andreaspark-Tierärzte, source: S8}
+  - {date: 2026-03-09, vaccine: Feligen CRP, type: Panleukopenia / rhinotracheitis, batch: "9TZH", valid_until: 2027-03-09, by: Dr. Wendler, source: S8}
+
+parasite_control:
+  - {date: 2022-11-18, product: Galces Plus (Pharmagal), purpose: Anti-echinococcus, source: S8}
+  - {date: 2025-04-06, product: Caniquantel Plus, purpose: Anti-echinococcus, source: S8}
+  - {date: 2025-09-11, product: Advocate spot-on, purpose: Antiparasitic — fleas and mites, source: S4}
+
+parasite_note: >
+  No routine schedule is documented. Whether prophylaxis has continued since September
+  2025 is unknown — relevant, since ectoparasites are a standard differential for both
+  pruritus and pododermatitis.
+
+recalls:
+  - {due: 2026-08-17, item: "Biopsy under general anaesthesia — footpads and tongue, plus FeLV/FIV testing", status: scheduled}
+  - {due: 2026-04-03, item: Rabies booster — cover lapsed, status: overdue}
+  - {due: 2025-09-24, item: Repeat biochemistry including creatinine — formally recommended, status: overdue}
+  - {due: 2025-09-15, item: Dermatology workup — formally requested, never done, status: overdue}
+  - {due: 2026-10-02, item: Annual presentation at Tierspital Zürich, status: due}
+  - {due: 2027-03-09, item: Feligen CRP booster, status: future}
+  - {due: 2027-10-01, item: Screening echocardiogram — Siberian HCM predisposition, status: future}
+
+# =============================================================================
+# ANAESTHESIA
+# =============================================================================
+anaesthesia:
+  - {date: 2025-08-15, procedure: Cast application, provider: Andreaspark-Tierärzte, protocol: Not documented, complications: None recorded}
+  - {date: 2025-08-25, procedure: CT with contrast, ultrasound, lymph node aspiration, provider: Tierspital Zürich, protocol: Not documented, complications: None recorded}
+  - {date: 2026-03-16, procedure: Dental cleaning, full-mouth radiographs, one extraction, provider: Probably Dr. Wendler, protocol: Not documented, complications: None recorded}
+  - {date: 2026-08-17, procedure: Footpad and tongue biopsy, provider: Katzen-Praxis, protocol: Planned, complications: "—"}
+
+anaesthesia_notes:
+  - "Cardiac assessment 02.10.2025: structurally and functionally normal heart, sinus arrhythmia only, no therapy required. `[S5]`"
+  - "Creatinine was mildly elevated in August 2025 and has never been rechecked. `[S2]`"
+  - "No haematology has ever been performed."
+  - "No known drug reactions or anaesthetic complications to date."
+
+# =============================================================================
+# CARE TEAM
+# =============================================================================
+care_team:
+  - {name: Katzen-Praxis Zürich, people: "Vera Burkard, Tierärztin FVH · Leslie Wohlgroth", role: Current primary — footpads and oral lesions, period: 2026 –, contact: "en.katzen-praxis.ch", current: true}
+  - {name: Kleintierpraxis Dr. Wendler, people: Marc-Florian Wendler, Dr. med. vet., role: Referral and triage 2025; vaccination and probable dental provider 2026, period: 2025, 2026, contact: "Regensbergstrasse 308, 8050 Zürich"}
+  - {name: Universitäres Tierspital Zürich — Surgery, people: "Dimitrios Bekiaridis, med. vet. · Heidi Radke, Dr. med. vet. DipECVS", role: Inpatient care for the forelimb infection, period: Aug–Sep 2025, contact: "Winterthurerstrasse 258c, 8057 Zürich"}
+  - {name: Tierspital Zürich — Cardiology, people: "Malin Christensen, med. vet. · Ivona Badric, Dr. · Sebastian Knell, Dr. med. vet.", role: Cardiac workup, period: Oct 2025, contact: "Winterthurerstrasse 258c, 8057 Zürich"}
+  - {name: Tierspital Zürich — Emergency & Intensive Care, people: Franziska Kleindienst, med. vet., role: Emergency dermatology, period: Sep 2025, contact: "Winterthurerstrasse 260, 8057 Zürich"}
+  - {name: ALOHA Kleintierpraxis GmbH, people: "Dres. med. vet. Dagmar and Peter Laluha", role: Lameness episode April 2026, period: Apr 2026, contact: "Lebernstrasse 11, 8309 Nürensdorf"}
+  - {name: Andreaspark-Tierärzte GmbH, people: "Dr. Stöcklin (named by the owners; not named in the records)", role: First Swiss practice; initial lameness workup, period: Apr–Aug 2025, contact: "Hagenholzstrasse 80, 8050 Zürich"}
+  - {name: Practice in Bous, Luxembourg, people: Serge Gusarov, Médecin Vétérinaire, role: Neutering, rabies boosters, export documentation, period: 2024–2025, contact: "Bous, Luxembourg"}
+  - {name: Practice in Sint-Genesius-Rode, Belgium, people: Natasha Limon, role: Vaccination 2023, period: 2023, contact: "Sint-Genesius-Rode, Belgium"}
+  - {name: Practice in Bochnia, Poland, people: Piotr Surma, Lekarz Weterynarii, role: Origin practice; passport issuer, period: 2022, contact: "Bochnia, Poland"}
+  - {name: Breeders, Belgium, people: Lynn and Thomas, role: Raised Gatsby 2022–2025; hold his pedigree and family health history, period: 2022–2025, contact: "Contact details not on file"}
+
+# =============================================================================
+# BREED RISK
+# =============================================================================
+breed_risks:
+  - {condition: Hypertrophic cardiomyopathy (HCM), relevance: "Breed predisposition explicitly noted by Tierspital Cardiology", status: "Echo October 2025 normal. Rescreen 2027–2028, or immediately if a murmur, arrhythmia or gallop rhythm is heard."}
+  - {condition: Polycystic kidney disease, relevance: Reported in some Siberian lines, status: Never screened. No genetic testing on file.}
+  - {condition: Pedigree and family history, relevance: Parents and littermates may carry relevant history, status: Not on file. The breeders would hold this.}
+
+# =============================================================================
+# OPEN ACTIONS
+# =============================================================================
+actions_urgent:
+  - text: >
+      **Bring the 11.09.2025 emergency report to Monday's appointment.** It documents
+      pustules and crusts on both ear margins with generalised itching, eleven months
+      ago, and it was never followed up. Katzen-Praxis have almost certainly not seen
+      it — it sits in an emergency report from a different department of a different
+      hospital. Ear margins and footpads are both sites that matter when immune-mediated
+      skin disease is on the differential list, and the clinicians already raised
+      autoimmune disease independently.
+  - text: >
+      **Ask for a pre-anaesthetic blood panel including renal values and a complete
+      blood count.** Creatinine was 171 µmol/l in August 2025, a recheck was formally
+      recommended, and it never happened. No CBC has ever been run.
+  - text: >
+      **Ask whether corticosteroids or other immunosuppressives should be withheld
+      until after the biopsy.** Starting them beforehand can compromise histopathology.
+      Do not start any such medication before Monday without discussing it first.
+  - text: >
+      **Ask whether they want additional samples taken in the same anaesthesia** — for
+      example tissue for bacterial and fungal culture alongside the histopathology,
+      given the documented history of deep infection.
+  - text: >
+      **Confirm which paws are affected** and whether the hind paws should be examined
+      too.
+
+records_wanted:
+  - {priority: High, item: "Dental record 16.03.2026 — report, dental chart, which tooth was extracted, anaesthetic protocol, post-operative medication", who: "Dr. Wendler's practice (patient no. 134141) — first confirm they were the provider"}
+  - {priority: High, item: "Clinical notes for 02.04.2026 — only a receipt is held, no findings recorded", who: ALOHA Kleintierpraxis}
+  - {priority: High, item: "Updated Andreaspark record — the copy held ends 07.08.2025 and omits the 15.08 and 16.08 visits", who: Andreaspark-Tierärzte}
+  - {priority: Medium, item: "Written report from the post-discharge recheck after the August 2025 hospitalisation", who: Tierspital Zürich}
+  - {priority: Medium, item: "CT and ultrasound images from 25/26.08.2025 — only the written report is held", who: Tierspital Zürich}
+  - {priority: Medium, item: "Consultation notes for 13.08.2026", who: Katzen-Praxis}
+  - {priority: Medium, item: "Records for 2023–2025 — the entire Belgium and Luxembourg period, including the neutering", who: "Ask the breeders which practice holds them"}
+  - {priority: Low, item: Pedigree papers and family health history, who: "The breeders (Lynn and Thomas)"}
+  - {priority: Low, item: Insurance policy details, who: —}
+
+facts_missing:
+  - Diet — brand, type and feeding pattern. Never documented anywhere.
+  - Whether parasite prophylaxis has continued since September 2025.
+  - Whether the Apoquel taper was completed as instructed, and what happened to the skin signs.
+  - Whether the 30.04.2025 right forelimb lameness was a real separate episode or a laterality error.
+  - Which veterinary practice held his care in Belgium and Luxembourg, 2023–2025.
+  - Body condition score — not recorded since September 2025.
+
+# =============================================================================
+# OBSERVATIONS FROM ASSEMBLING THE RECORD — inferences, not diagnoses
+# =============================================================================
+analysis:
+  - title: A pattern no single clinician has been positioned to see
+    body: |
+      Each episode was handled by a different practice, and no one has held the whole
+      file at once.
+
+      | Date | Event | Clinic |
+      |---|---|---|
+      | Apr 2025 | Forelimb lameness (right) | Andreaspark |
+      | Jul–Sep 2025 | Severe deep infection, left forelimb digit IV, cause never found | Andreaspark → Wendler → Tierspital |
+      | Sep 2025 | Pruritus with pustules and crusts on both ear margins, never worked up | Tierspital (Emergency) |
+      | Apr 2026 | Forelimb lameness (left), no cause found | ALOHA |
+      | Aug 2026 | Bilateral footpad swelling and oral lesions, cause unknown | Katzen-Praxis |
+
+      Recurrent, self-resolving or unexplained lesions at multiple sites — pads, ear
+      margins, oral mucosa — in a strictly indoor cat with no trauma exposure is a
+      pattern that would reasonably prompt a clinician to consider systemic or
+      immune-mediated causes alongside local ones. The clinicians at the current
+      practice raised autoimmune disease independently. The point here is narrower:
+      **the September 2025 ear findings are the piece most likely to be missing from
+      their picture**, because they sit in an emergency report from a different
+      department of a different hospital.
+
+  - title: The absence of an identified cause is itself a finding
+    body: |
+      Across three separate lameness episodes, three practices, radiographs, CT with
+      contrast and ultrasound, **no trauma, foreign body or inciting event was ever
+      demonstrated** — in an indoor-only cat. The Tierspital left "foreign body" on the
+      list only because it could not be excluded, not because anything was found.
+
+  - title: A timing overlap worth not losing
+    body: |
+      The September 2025 pruritus began while Gatsby was partway through a four-week
+      course of amoxicillin-clavulanate. Whether that is coincidence or relevant is a
+      question for a dermatologist, but the overlap is in the record.
+
+# =============================================================================
+# SUPERSEDED — retained so old claims can be recognised and dismissed
+# =============================================================================
+superseded:
+  - {claim: "Chip fracture of the middle phalanx of digit IV, at the PIP joint", origin: "Owner notes, Aug 2025, based on radiographs read by a veterinary assistant at Andreaspark on 15.08.2025", correction: "No fracture was ever confirmed. Dr. Wendler rejected it on 21.08.2025; the CT localised disease to the metacarpophalangeal joint IV, one joint proximal, and diagnosed septic arthritis with osteomyelitis."}
+  - {claim: "Hypothesis table: avulsion fracture vs. articular fracture vs. bone cancer, concluding that surgery was strongly recommended", origin: "The owners' own reasoning, Aug 2025, before the CT", correction: "Superseded entirely. The Tierspital found no surgical indication and treated conservatively, with a good response."}
+  - {claim: "Adopted from a shelter in Belgium", origin: "Andreaspark anamnesis, 30.04.2025", correction: "Not a shelter cat. Bred in Poland, raised by breeders Lynn and Thomas in Belgium, acquired directly from the breeder in 2025. Worth correcting with the practice, since any vet reading that record absorbs it."}
+  - {claim: "Inflacam 5 mg per day", origin: Owner notes, correction: "The dispensed product was 0.5 mg/ml suspension dosed for 5 kg — on the order of 0.25 mg per day."}
+  - {claim: "\"Osiris\"", origin: Typo in owner notes, correction: "Onsior (robenacoxib)."}
+  - {claim: "The 21.08.2025 consultation was at Andreaspark", origin: Owner notes, correction: "It was Dr. Wendler's first presentation."}
+
+# =============================================================================
+# SOURCES
+# file: path under sources/ — the link appears automatically once the file is added
+# =============================================================================
+sources:
+  - {id: S1, title: Practice record (Krankengeschichte), date: 2025-04-30 – 2025-08-07, author: Andreaspark-Tierärzte GmbH, lang: DE, pages: 1, file: 2025-08-07_andreaspark_practice-record.pdf}
+  - {id: S2, title: Patient report — inpatient stay, left forelimb, date: 2025-09-01, author: "Tierspital Zürich, Surgery — D. Bekiaridis, H. Radke", lang: DE, pages: 5, file: 2025-09-01_tierspital-surgery_discharge.pdf}
+  - {id: S4, title: Veterinary report — emergency dermatology, date: 2025-09-11, author: "Tierspital Zürich, Emergency — F. Kleindienst", lang: EN, pages: 2, file: 2025-09-11_tierspital-emergency_dermatology.pdf}
+  - {id: S5, title: Patient report — cardiac workup, date: 2025-10-02, author: "Tierspital Zürich, Cardiology — M. Christensen, I. Badric, S. Knell", lang: DE, pages: 2, file: 2025-10-02_tierspital-cardiology_echo.pdf}
+  - {id: S6, title: Owner-maintained history, date: to 2025-08-25, author: Owners, lang: DE/EN, pages: null, file: null, superseded: true}
+  - {id: S8, title: EU pet passport PL 1218742, date: 2022 – 2026, author: "Issued in Bochnia (PL); entries from BE, LU, and both Swiss practices", lang: PL/EN, pages: 15, file: 2026-08-13_eu-pet-passport.pdf}
+  - {id: S9, title: Referral report — first presentation, date: 2025-08-21, author: "Kleintierpraxis Dr. Wendler — Marc-Florian Wendler", lang: DE, pages: 2, file: 2025-08-21_wendler_referral.pdf}
+  - {id: S10, title: Receipt, date: 2026-04-02, author: ALOHA Kleintierpraxis GmbH, lang: DE, pages: 1, file: 2026-04-02_aloha_receipt.pdf}
+
+# =============================================================================
+# IMAGES
+# =============================================================================
+images:
+  - {id: I1, date: 2025-08-05, kind: xray, region: Elbow, view: Mediolateral, neutral 135°, clinic: Andreaspark, file: xray/2025-08-05_andreaspark_elbow-ml.jpg}
+  - {id: I2, date: 2025-08-05, kind: xray, region: Carpus, view: Mediolateral, clinic: Andreaspark, file: xray/2025-08-05_andreaspark_carpus-ml.jpg}
+  - {id: I3, date: 2025-08-05, kind: xray, region: Shoulder, view: Mediolateral, clinic: Andreaspark, file: xray/2025-08-05_andreaspark_shoulder-ml.jpg}
+  - {id: I4, date: 2025-08-15, kind: xray, region: Left paw, view: Dorsopalmar, clinic: Andreaspark, file: xray/2025-08-15_andreaspark_paw-dp.jpg, note: "The study on which the disputed digit IV fracture was suspected."}
+  - {id: I5, date: 2025-08-15, kind: xray, region: Left paw, view: Dorsopalmar — owner-annotated, clinic: Andreaspark, file: xray/2025-08-15_andreaspark_paw-dp-annotated.jpg, note: "Digits numbered 1–5. The red circle marks the metacarpophalangeal region of digit IV — which matches where the CT later localised the disease, not where the fracture was said to be."}
+  - {id: I6, date: 2026-03-16, kind: dental, region: Upper right P4, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_ok-re-p4.jpg}
+  - {id: I7, date: 2026-03-16, kind: dental, region: Upper canines, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_ok-canines.jpg}
+  - {id: I8, date: 2026-03-16, kind: dental, region: Upper right canine, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_ok-re-canine.jpg}
+  - {id: I9, date: 2026-03-16, kind: dental, region: Both upper canines, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_ok-both-canines.jpg}
+  - {id: I10, date: 2026-03-16, kind: dental, region: Upper left P4, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_ok-li-p4.jpg}
+  - {id: I11, date: 2026-03-16, kind: dental, region: Lower right P3, P4, M1, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_uk-re-p3-p4-m1.jpg}
+  - {id: I12, date: 2026-03-16, kind: dental, region: Lower left P3, P4, M1, view: Intraoral, clinic: Dental provider, file: dental/2026-03-16_intraoral_uk-li-p3-p4-m1.jpg}
+  - {id: I13, date: 2026-08-13, kind: clinical, region: Oral cavity, view: Owner-held, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_oral-01.jpg}
+  - {id: I14, date: 2026-08-13, kind: clinical, region: Oral cavity, view: Owner-held, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_oral-02.jpg}
+  - {id: I15, date: 2026-08-13, kind: clinical, region: Oral cavity, view: Under illumination, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_oral-03.jpg}
+  - {id: I16, date: 2026-08-13, kind: clinical, region: Oral cavity, view: Under illumination, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_oral-04.jpg}
+  - {id: I17, date: 2026-08-13, kind: clinical, region: Oral cavity, view: Under illumination, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_oral-05.jpg}
+  - {id: I18, date: 2026-08-13, kind: clinical, region: Tongue, view: Under illumination, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_tongue-01.jpg}
+  - {id: I19, date: 2026-08-13, kind: clinical, region: Front footpads, view: Metacarpal pad, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_footpad-01.jpg}
+  - {id: I20, date: 2026-08-13, kind: clinical, region: Front footpads, view: Metacarpal pad, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_footpad-02.jpg}
+  - {id: I21, date: 2026-08-13, kind: clinical, region: Front footpads, view: Metacarpal pad, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_footpad-03.jpg}
+  - {id: I22, date: 2026-08-13, kind: clinical, region: Front footpads, view: Metacarpal pad, clinic: Katzen-Praxis, file: clinical/2026-08-13_katzenpraxis_footpad-04.jpg}
+
+# =============================================================================
+# GLOSSARY
+# =============================================================================
+glossary:
+  - {de: Lahmheit, en: lameness}
+  - {de: Vordergliedmasse / VGM, en: forelimb}
+  - {de: Phlegmone, en: phlegmon — diffuse spreading soft-tissue infection}
+  - {de: Osteomyelitis, en: bone infection}
+  - {de: Tendovaginitis / Tenovaginitis, en: inflammation of a tendon sheath}
+  - {de: Articulatio metacarpophalangea, en: metacarpophalangeal (MCP) joint — the knuckle}
+  - {de: Phalanx proximalis / media / distalis, en: proximal / middle / distal phalanx (toe bone)}
+  - {de: Os metacarpale, en: metacarpal bone}
+  - {de: Sesambein, en: sesamoid bone}
+  - {de: M. flexor digitorum profundus, en: deep digital flexor muscle and tendon}
+  - {de: "Lyse, permeativ", en: permeative lysis — moth-eaten bone destruction}
+  - {de: KM-Anreicherung, en: contrast enhancement}
+  - {de: Lymphadenomegalie, en: enlarged lymph node}
+  - {de: Dolenz / dolent, en: pain / painful on palpation}
+  - {de: Hgr. / Mgr. / Lgr., en: severe / moderate / mild}
+  - {de: DDx, en: differential diagnoses}
+  - {de: Pruritus, en: itching}
+  - {de: Sinusarrhythmie, en: sinus arrhythmia — a normal variant in cats}
+  - {de: Nachbehandlung, en: aftercare}
+  - {de: Nachkontrolle, en: recheck appointment}
+  - {de: Besitzerbericht, en: owner's copy of the clinical report}
+  - {de: Krankengeschichte (KG), en: medical record}
+  - {de: Erstvorstellung, en: first presentation}
+  - {de: Ruhighaltung, en: rest / confinement}
+  - {de: PTA, en: veterinary practice assistant}
+
+changelog:
+  - {version: "2.0", date: 2026-08-13, change: "Website launch. Data file became the single source of truth for the site."}
+  - {version: "1.1", date: 2026-08-13, change: "Origin corrected — breeder-raised, not a shelter cat. Weight 5.5 kg added. FeLV/FIV testing confirmed for 17.08.2026."}
+  - {version: "1.0", date: 2026-08-13, change: "Initial compilation from 10 documents and 22 images."}
