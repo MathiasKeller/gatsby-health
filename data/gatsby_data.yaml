@@ -137,7 +137,7 @@ problems:
 
   - id: P3
     slug: forelimb-lameness
-    title: Recurrent forelimb lameness
+    title: Recurrent lameness, left fore and hind limb
     short: Lameness
     status: recurrent
     status_label: Recurrent — currently quiescent
@@ -147,9 +147,10 @@ problems:
     colour: amber
     body: |
       The longest-running and most incompletely explained thread in Gatsby's history.
-      **Three episodes between April 2025 and April 2026, all of them left-sided**, in a
-      strictly indoor, single-cat household with no observed trauma. Only one episode
-      ever produced a diagnosis, and that diagnosis was never traced to a cause.
+      **Three episodes between April 2025 and April 2026, all on the left side but in
+      two different limbs** — twice the forelimb, once the hind limb — in a strictly
+      indoor, single-cat household with no observed trauma. Only one episode ever
+      produced a diagnosis, and that diagnosis was never traced to a cause.
 
       ---
 
@@ -253,15 +254,18 @@ problems:
 
       ---
 
-      ### Episode 2 · 2 April 2026
+      ### Episode 2 · 2 April 2026 — left HIND limb
 
-      Emergency consultation at ALOHA Kleintierpraxis for left forelimb lameness.
-      Treated with meloxicam by subcutaneous injection plus oral suspension, and a
-      homeopathic preparation. **No cause identified.** Resolved after about three days.
-      `[S10]` `[O]`
+      Emergency consultation at ALOHA Kleintierpraxis. **Swelling and pain over the
+      tarsus (Sprunggelenk) of the left hind limb.** Treated with meloxicam by
+      subcutaneous injection plus oral suspension, and a homeopathic preparation.
+      **No cause identified.** Resolved after about three days. `[S11]` `[O]`
 
-      > Only a receipt exists for this visit. No clinical findings were recorded in any
-      > document held.
+      > `[Q]` **Correction.** This episode was previously recorded here as left
+      > *forelimb* lameness, inferred from the invoice `[S10]`, which names no body
+      > part. The affected limb and the tarsal findings were confirmed by email from
+      > the practice on 14.08.2026 `[S11]`. **No clinical report has ever been issued
+      > for this visit** — the findings exist only in that email.
 
   - id: P4
     slug: pruritus
@@ -628,16 +632,17 @@ timeline:
     images: [I6, I7, I8, I9, I10, I11, I12]
     milestone: true
   - date: 2026-04-02
-    title: Third lameness episode — no cause found
+    title: Third lameness episode — left HIND limb, swollen painful tarsus
     detail: >
-      Emergency consultation for left forelimb lameness. Meloxicam 0.5 mg by
-      subcutaneous injection plus oral suspension, and a homeopathic preparation.
-      No cause identified. Resolved after about three days. Only a receipt exists —
-      no clinical findings were recorded.
+      Emergency consultation. Swelling and pain over the tarsus (Sprunggelenk) of the
+      left hind limb. Meloxicam 0.5 mg by subcutaneous injection plus oral suspension,
+      and a homeopathic preparation. No cause identified. Resolved after about three
+      days. No clinical report was ever issued — the findings come from an email sent
+      by the practice on 14.08.2026.
     provider: ALOHA Kleintierpraxis
     problem: P3
-    tag: V
-    source: S10
+    tag: O
+    source: S11
   - date: 2026-04-03
     title: Rabies vaccination expires
     detail: Cover has been lapsed since this date.
@@ -688,8 +693,8 @@ medications_past:
   - {start: 2025-09-11, end: null, drug: Advocate spot-on, generic: imidacloprid / moxidectin, dose: 1 pipette, route: Topical to the neck, indication: Antiparasitic, prescriber: Tierspital, response: Not documented, source: S4}
   - {start: 2025-09-11, end: null, drug: Leniskin foam, generic: topical skin support, dose: as directed, route: Topical to affected areas, indication: Skin support, prescriber: Tierspital, response: Not documented, source: S4}
   - {start: 2025-09-11, end: 2025-09-18, drug: Apoquel 5.4 mg, generic: oclacitinib, dose: half a tablet, route: PO twice daily, indication: Pruritus, prescriber: Tierspital, response: "Given about one week. Response not documented. Taper instruction — compliance unrecorded.", source: S4}
-  - {start: 2026-04-02, end: 2026-04-02, drug: Metacam 5 mg/ml injection, generic: meloxicam, dose: 0.1 ml = 0.5 mg, route: Subcutaneous, once, indication: Left forelimb lameness, prescriber: ALOHA, response: Resolved in about 3 days, source: S10}
-  - {start: 2026-04-02, end: 2026-04-05, drug: Metacam cat oral suspension, generic: meloxicam, dose: 3 ml dispensed, route: PO, indication: Left forelimb lameness, prescriber: ALOHA, response: Resolved, source: S10}
+  - {start: 2026-04-02, end: 2026-04-02, drug: Metacam 5 mg/ml injection, generic: meloxicam, dose: 0.1 ml = 0.5 mg, route: Subcutaneous, once, indication: Left hind limb lameness - swollen tarsus, prescriber: ALOHA, response: Resolved in about 3 days, source: S10}
+  - {start: 2026-04-02, end: 2026-04-05, drug: Metacam cat oral suspension, generic: meloxicam, dose: 3 ml dispensed, route: PO, indication: Left hind limb lameness - swollen tarsus, prescriber: ALOHA, response: Resolved, source: S10}
   - {start: 2026-04-02, end: null, drug: Homeopathic preparation, C potency, generic: not specified, dose: not specified, route: not specified, indication: Not specified, prescriber: ALOHA, response: Not documented, source: S10}
 
 medication_notes:
@@ -880,13 +885,15 @@ analysis:
       | Apr 2025 | Forelimb lameness (left) | Andreaspark |
       | Jul–Sep 2025 | Severe deep infection, left forelimb digit IV, cause never found | Andreaspark → Wendler → Tierspital |
       | Sep 2025 | Pruritus with pustules and crusts on both ear margins, never worked up | Tierspital (Emergency) |
-      | Apr 2026 | Forelimb lameness (left), no cause found | ALOHA |
+      | Apr 2026 | Lameness, left HIND limb — swollen painful tarsus, no cause found | ALOHA |
       | Aug 2026 | Bilateral footpad swelling and oral lesions, cause unknown | Katzen-Praxis |
 
       Recurrent, self-resolving or unexplained lesions at multiple sites — pads, ear
       margins, oral mucosa — in a strictly indoor cat with no trauma exposure is a
       pattern that would reasonably prompt a clinician to consider systemic or
-      immune-mediated causes alongside local ones. The clinicians at the current
+      immune-mediated causes alongside local ones. The April 2026 episode was a swollen, painful tarsus — a second joint, in a
+      second limb. Two joints in two limbs is a different picture from one joint
+      infected through a puncture wound. The clinicians at the current
       practice raised autoimmune disease independently. The point here is narrower:
       **the September 2025 ear findings are the piece most likely to be missing from
       their picture**, because they sit in an emergency report from a different
@@ -916,7 +923,7 @@ superseded:
   - {claim: "Inflacam 5 mg per day", origin: Owner notes, correction: "The dispensed product was 0.5 mg/ml suspension dosed for 5 kg — on the order of 0.25 mg per day."}
   - {claim: "\"Osiris\"", origin: Typo in owner notes, correction: "Onsior (robenacoxib)."}
   - {claim: "The 21.08.2025 consultation was at Andreaspark", origin: Owner notes, correction: "It was Dr. Wendler's first presentation."}
-
+  - {claim: "The April 2026 lameness was the left FORELIMB", origin: "Inferred from the ALOHA invoice [S10], which names no body part", correction: "It was the left HIND limb, with swelling and pain over the tarsus. Confirmed by email from the practice, 14.08.2026 [S11]. This means the lameness episodes involve two different limbs, not one."}
 # =============================================================================
 # SOURCES
 # file: path under sources/ — the link appears automatically once the file is added
@@ -930,6 +937,7 @@ sources:
   - {id: S8, title: EU pet passport PL 1218742, date: 2022 – 2026, author: "Issued in Bochnia (PL); entries from BE, LU, and both Swiss practices", lang: PL/EN, pages: 15, file: 2026-08-13_eu-pet-passport.pdf}
   - {id: S9, title: Referral report — first presentation, date: 2025-08-21, author: "Kleintierpraxis Dr. Wendler — Marc-Florian Wendler", lang: DE, pages: 2, file: 2025-08-21_wendler_referral.pdf}
   - {id: S10, title: Receipt, date: 2026-04-02, author: ALOHA Kleintierpraxis GmbH, lang: DE, pages: 1, file: 2026-04-02_aloha_receipt.pdf}
+  - {id: S11, title: "Email from reception — April 2026 lameness details", date: 2026-08-14, author: ALOHA Kleintierpraxis GmbH, lang: DE, pages: null, file: null}
 
 # =============================================================================
 # IMAGES
