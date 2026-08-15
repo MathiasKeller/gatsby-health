@@ -147,21 +147,23 @@ problems:
     colour: amber
     body: |
       The longest-running and most incompletely explained thread in Gatsby's history.
-      **Four episodes in 24 months**, three of them left-sided, in a strictly indoor,
+      **Four episodes in 24 months, all of them left-sided**, in a strictly indoor,
       single-cat household with no observed trauma. Only one episode ever produced a
       diagnosis, and that diagnosis was never traced to a cause.
 
       ---
 
-      ### Episode 0 · 30 April 2025 — right forelimb
+      ### Episode 0 · 30 April 2025 — left forelimb
 
-      At his first Swiss consultation, lameness of the **right** forelimb was recorded,
-      with no pain on manipulation and an otherwise normal general condition. Treated
-      with meloxicam. `[S1]`
+      At his first Swiss consultation, lameness was recorded with no pain on
+      manipulation and an otherwise normal general condition. Treated with meloxicam.
+      `[S1]`
 
-      > `[Q]` Every subsequent episode is **left**-sided. This is either a genuine
-      > separate right-sided event or a laterality error in the practice record. It has
-      > never been reconciled.
+      > `[Q]` **Correction.** The Andreaspark record states *"Lahmheit vorne rechts"* —
+      > lameness front **right** `[S1]`. The owners confirm the affected limb was the
+      > **left**, consistent with every subsequent episode. This is a transcription
+      > error in the practice record. Anyone requesting the original document from
+      > Andreaspark will see "rechts"; it should be read as left. `[O]`
 
       ---
 
@@ -474,11 +476,15 @@ timeline:
     source: S8
     milestone: true
   - date: 2025-04-30
-    title: First Swiss consultation — lameness front RIGHT
-    detail: "ANIS registration. Feligen CRP vaccination. No pain on manipulation, general condition otherwise normal. Inflacam prescribed. Weight 5.2 kg. The anamnesis records him as a shelter adoption, which is incorrect."
+    title: First Swiss consultation — lameness, left forelimb
+    detail: >
+      ANIS registration. Feligen CRP vaccination. No pain on manipulation, general
+      condition otherwise normal. Inflacam prescribed. Weight 5.2 kg. Two errors in this
+      practice record: it states the lameness was front RIGHT (the owners confirm it was
+      the left), and it records him as a shelter adoption (he came from a breeder).
     provider: Andreaspark-Tierärzte
     problem: P3
-    tag: V
+    tag: Q
     source: S1
   - date: 2025-07-25
     title: Limp on the left forelimb noticed
@@ -857,7 +863,6 @@ facts_missing:
   - Diet — brand, type and feeding pattern. Never documented anywhere.
   - Whether parasite prophylaxis has continued since September 2025.
   - Whether the Apoquel taper was completed as instructed, and what happened to the skin signs.
-  - Whether the 30.04.2025 right forelimb lameness was a real separate episode or a laterality error.
   - Which veterinary practice held his care in Belgium and Luxembourg, 2023–2025.
   - Body condition score — not recorded since September 2025.
 
@@ -872,7 +877,7 @@ analysis:
 
       | Date | Event | Clinic |
       |---|---|---|
-      | Apr 2025 | Forelimb lameness (right) | Andreaspark |
+      | Apr 2025 | Forelimb lameness (left) | Andreaspark |
       | Jul–Sep 2025 | Severe deep infection, left forelimb digit IV, cause never found | Andreaspark → Wendler → Tierspital |
       | Sep 2025 | Pruritus with pustules and crusts on both ear margins, never worked up | Tierspital (Emergency) |
       | Apr 2026 | Forelimb lameness (left), no cause found | ALOHA |
@@ -906,6 +911,7 @@ analysis:
 superseded:
   - {claim: "Chip fracture of the middle phalanx of digit IV, at the PIP joint", origin: "Owner notes, Aug 2025, based on radiographs read by a veterinary assistant at Andreaspark on 15.08.2025", correction: "No fracture was ever confirmed. Dr. Wendler rejected it on 21.08.2025; the CT localised disease to the metacarpophalangeal joint IV, one joint proximal, and diagnosed septic arthritis with osteomyelitis."}
   - {claim: "Hypothesis table: avulsion fracture vs. articular fracture vs. bone cancer, concluding that surgery was strongly recommended", origin: "The owners' own reasoning, Aug 2025, before the CT", correction: "Superseded entirely. The Tierspital found no surgical indication and treated conservatively, with a good response."}
+  - {claim: "Lameness of the RIGHT forelimb, 30 April 2025", origin: "Andreaspark practice record [S1], which states 'Lahmheit vorne rechts'", correction: "A transcription error. The owners confirm the affected limb was the left, consistent with all three later episodes. All four lameness episodes are left-sided. The original document still reads 'rechts' — read it as left."}
   - {claim: "Adopted from a shelter in Belgium", origin: "Andreaspark anamnesis, 30.04.2025", correction: "Not a shelter cat. Bred in Poland, raised by breeders Lynn and Thomas in Belgium, acquired directly from the breeder in 2025. Worth correcting with the practice, since any vet reading that record absorbs it."}
   - {claim: "Inflacam 5 mg per day", origin: Owner notes, correction: "The dispensed product was 0.5 mg/ml suspension dosed for 5 kg — on the order of 0.25 mg per day."}
   - {claim: "\"Osiris\"", origin: Typo in owner notes, correction: "Onsior (robenacoxib)."}
