@@ -147,9 +147,9 @@ problems:
     colour: amber
     body: |
       The longest-running and most incompletely explained thread in Gatsby's history.
-      **Four episodes in 24 months, all of them left-sided**, in a strictly indoor,
-      single-cat household with no observed trauma. Only one episode ever produced a
-      diagnosis, and that diagnosis was never traced to a cause.
+      **Three episodes between April 2025 and April 2026, all of them left-sided**, in a
+      strictly indoor, single-cat household with no observed trauma. Only one episode
+      ever produced a diagnosis, and that diagnosis was never traced to a cause.
 
       ---
 
@@ -678,7 +678,7 @@ observations: []
 medications_current: []
 
 medications_past:
-  - {start: 2025-04-30, end: null, drug: Inflacam 0.5 mg/ml oral suspension, generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Right forelimb lameness, prescriber: Andreaspark, response: Not documented, source: S1}
+  - {start: 2025-04-30, end: null, drug: Inflacam 0.5 mg/ml oral suspension, generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Left forelimb lameness, prescriber: Andreaspark, response: Not documented, source: S1}
   - {start: 2025-07-28, end: 2025-08-05, drug: Inflacam 0.5 mg/ml oral suspension, generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Left forelimb lameness, prescriber: Andreaspark, response: Insufficient — lameness progressed, source: S1}
   - {start: 2025-08-05, end: 2025-08-11, drug: Onsior 6 mg, generic: robenacoxib, dose: 6 mg, route: PO once daily for 6 days, indication: Left forelimb lameness, prescriber: Andreaspark, response: Partial; relief did not last 24 hours, source: S1}
   - {start: 2025-08-11, end: 2025-08-21, drug: Inflacam (resumed), generic: meloxicam, dose: dosed for 5 kg, route: PO once daily, indication: Left forelimb lameness, prescriber: Andreaspark, response: Insufficient. Stopped by Dr. Wendler, source: S9}
@@ -911,7 +911,7 @@ analysis:
 superseded:
   - {claim: "Chip fracture of the middle phalanx of digit IV, at the PIP joint", origin: "Owner notes, Aug 2025, based on radiographs read by a veterinary assistant at Andreaspark on 15.08.2025", correction: "No fracture was ever confirmed. Dr. Wendler rejected it on 21.08.2025; the CT localised disease to the metacarpophalangeal joint IV, one joint proximal, and diagnosed septic arthritis with osteomyelitis."}
   - {claim: "Hypothesis table: avulsion fracture vs. articular fracture vs. bone cancer, concluding that surgery was strongly recommended", origin: "The owners' own reasoning, Aug 2025, before the CT", correction: "Superseded entirely. The Tierspital found no surgical indication and treated conservatively, with a good response."}
-  - {claim: "Lameness of the RIGHT forelimb, 30 April 2025", origin: "Andreaspark practice record [S1], which states 'Lahmheit vorne rechts'", correction: "A transcription error. The owners confirm the affected limb was the left, consistent with all three later episodes. All four lameness episodes are left-sided. The original document still reads 'rechts' — read it as left."}
+  - {claim: "Lameness of the RIGHT forelimb, 30 April 2025", origin: "Andreaspark practice record [S1], which states 'Lahmheit vorne rechts'", correction: "A transcription error. The owners confirm the affected limb was the left, consistent with both later episodes. All four lameness episodes are left-sided. The original document still reads 'rechts' — read it as left."}
   - {claim: "Adopted from a shelter in Belgium", origin: "Andreaspark anamnesis, 30.04.2025", correction: "Not a shelter cat. Bred in Poland, raised by breeders Lynn and Thomas in Belgium, acquired directly from the breeder in 2025. Worth correcting with the practice, since any vet reading that record absorbs it."}
   - {claim: "Inflacam 5 mg per day", origin: Owner notes, correction: "The dispensed product was 0.5 mg/ml suspension dosed for 5 kg — on the order of 0.25 mg per day."}
   - {claim: "\"Osiris\"", origin: Typo in owner notes, correction: "Onsior (robenacoxib)."}
