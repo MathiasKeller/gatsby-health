@@ -1,0 +1,56 @@
+name: Record observation
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  record:
+    # Only issues created from the observation form
+    if: contains(join(github.event.issue.labels.*.name, ','), 'observation')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Add the observation to the data file
+        id: add
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python3 site/add_observation.py
+
+      - name: Commit
+        run: |
+          git config user.name  "gatsby-bot"
+          git config user.email "gatsby-bot@users.noreply.github.com"
+          git add data/gatsby_data.yaml
+          git commit -m "Observation: ${{ steps.add.outputs.title }} (#${{ github.event.issue.number }})"
+          git push
+
+      - name: Close the issue with a confirmation
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const url = `https://${context.repo.owner}.github.io/${context.repo.repo}/observations.html`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Recorded. It will appear at ${url} once the build finishes, in about a minute.`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: "closed"
+            });
