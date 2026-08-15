@@ -1,0 +1,87 @@
+name: Record an observation
+description: Log something you noticed about Gatsby between vet visits.
+title: "[obs] "
+labels: ["observation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Takes about twenty seconds. Everything except the date and the summary is optional.
+        Once you submit, it lands in the record and the site rebuilds itself.
+
+  - type: input
+    id: when
+    attributes:
+      label: When did you notice it
+      description: "Format: YYYY-MM-DD HH:MM. Leave blank to use the time you submit this."
+      placeholder: "2026-08-20 07:30"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Lameness
+        - Skin or coat
+        - Oral or tongue
+        - Paws
+        - Appetite or drinking
+        - Litter tray
+        - Breathing
+        - Behaviour
+        - Weight
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How marked was it
+      options:
+        - Mild
+        - Moderate
+        - Marked
+    validations:
+      required: true
+
+  - type: input
+    id: body_part
+    attributes:
+      label: Body part
+      placeholder: "left front paw"
+    validations:
+      required: false
+
+  - type: input
+    id: title
+    attributes:
+      label: One-line summary
+      placeholder: "Slight limp on the left front leg after jumping down from the sofa"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: What you saw
+      description: >
+        What it looked like, how long it lasted, what he was doing beforehand, and anything
+        that made it better or worse. Drag photos in here — they get saved into the record.
+      placeholder: "Held the paw up for a few seconds, then walked normally. Happened twice this morning."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: vet
+    attributes:
+      label: Vet contacted
+      options:
+        - "No"
+        - "Yes — advice by phone"
+        - "Yes — appointment booked"
+        - "Yes — seen already"
+    validations:
+      required: true
