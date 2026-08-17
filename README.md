@@ -1,4 +1,4 @@
-# Gatsby — health record
+# Gatsby — health record v1.1
 
 A veterinary medical record for Gatsby, a Siberian cat in Zürich, published as a static
 website. Built for two audiences: a vet who needs the clinical picture quickly, and his
